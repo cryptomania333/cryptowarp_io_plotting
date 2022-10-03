@@ -53,6 +53,7 @@ def main(symbol):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         symbol = sys.argv[1]
+        symbol = symbol.upper()
     else:
         symbol = "BTCUSDT"
     main(symbol)
